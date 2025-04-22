@@ -1,29 +1,37 @@
+<head>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
 <!DOCTYPE html>
 <html>
-  <head>
-  </head>
   <body>
-    <p>Consumo de REST-API de Usuarios</p>
+    <p>
+     <h1>Consumo de REST-API de Usuarios POSTGRESQL</h1>
+    </p>
 
     <div>
-      <label>Name</label>
+      <label>Name </label>
       <input type="text" id="name">
     </div>
+
     <div>
-      <label>Email</label>
+      <label>Email </label>
       <input type="text" id="email">
     </div>
+
     <div>
-      <label>Age</label>
+      <label>Age </label>
       <input type="text" id="age">
     </div>
+
     <div>
-      <label>Comments</label>
+      <label>Comments </label>
       <input type="text" id="comments">
     </div>
 
-    <button onclick="postUser()">POST user</button>
-    <button onclick="getUsers()">GET usuarios</button>
+    <button onclick="postUser()"> POST user </button>
+    <button onclick="getUsers()"> GET usuarios </button>
+    <button id="updateBtn" onclick="updateUser()" style="display:none;">Actualizar usuario</button>
 
     <div id="resultado"></div>
 
