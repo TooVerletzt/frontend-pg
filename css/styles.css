@@ -1,3 +1,4 @@
+/* Fondo general */
 body {
     background: linear-gradient(to bottom, #f2f6fc, #d8e6f3);
     font-family: 'Poppins', sans-serif;
@@ -6,7 +7,7 @@ body {
     color: #2c3e50;
     min-height: 100vh;
   }
-  
+  /* Prueba */
   h1 {
     font-size: 2.2rem;
     color: #2a3f5f;
