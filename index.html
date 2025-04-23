@@ -1,42 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
 <head>
+  <meta charset="UTF-8">
+  <title>Usuarios PostgreSQL</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
+<body>
 
-<!DOCTYPE html>
-<html>
-  <body>
-    <p>
-     <h1>Consumo de REST-API de Usuarios POSTGRESQL</h1>
-    </p>
+  <h1>📋 Administración de Usuarios - PostgreSQL API</h1>
 
-    <div>
-      <label>Name </label>
-      <input type="text" id="name">
+  <form>
+    <input type="text" id="name" placeholder="👤 Nombre">
+    <input type="email" id="email" placeholder="✉️ Correo electrónico">
+    <input type="number" id="age" placeholder="🎂 Edad">
+    <input type="text" id="comments" placeholder="📝 Comentarios">
+    <div style="text-align: center;">
+      <button type="button" onclick="postUser()">📥 Agregar</button>
+      <button type="button" onclick="getUsers()">📋 Ver Usuarios</button>
+      <button type="button" id="updateBtn" onclick="updateUser()">🔄 Actualizar</button>
     </div>
+  </form>
 
-    <div>
-      <label>Email </label>
-      <input type="text" id="email">
-    </div>
+  <div id="resultado"></div>
 
-    <div>
-      <label>Age </label>
-      <input type="text" id="age">
-    </div>
-
-    <div>
-      <label>Comments </label>
-      <input type="text" id="comments">
-    </div>
-
-    <button onclick="postUser()"> POST user </button>
-    <button onclick="getUsers()"> GET usuarios </button>
-    <button id="updateBtn" onclick="updateUser()" style="display:none;">Actualizar usuario</button>
-
-    <div id="resultado"></div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="callrestapi.js"></script>
-  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="callrestapi.js"></script>
+</body>
 </html>
 
